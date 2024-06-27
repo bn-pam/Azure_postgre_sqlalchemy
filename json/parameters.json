@@ -1,0 +1,73 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverName": {
+            "value": "pb-postgresql"
+        },
+        "location": {
+            "value": "francecentral"
+        },
+        "serverEdition": {
+            "value": "Burstable"
+        },
+        "storageSizeGB": {
+            "value": 32
+        },
+        "haEnabled": {
+            "value": "Disabled"
+        },
+        "backupRetentionDays": {
+            "value": 7
+        },
+        "geoRedundantBackup": {
+            "value": "Disabled"
+        },
+        "availabilityZone": {
+            "value": ""
+        },
+        "vmName": {
+            "value": "Standard_B1ms"
+        },
+        "standbyAvailabilityZone": {
+            "value": ""
+        },
+        "firewallRules": {
+            "value": {
+                "rules": [
+                    {
+                        "name": "ClientIPAddress_2024-6-27_10-15-47",
+                        "startIPAddress": "45.81.84.9",
+                        "endIPAddress": "45.81.84.9"
+                    }
+                ]
+            }
+        },
+        "network": {
+            "value": {
+                "publicNetworkAccess": "Enabled"
+            }
+        },
+        "tags": {
+            "value": {}
+        },
+        "version": {
+            "value": "16"
+        },
+        "administratorLogin": {
+            "value": "pbonneau"
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "apiVersion": {
+            "value": "2023-06-01-preview"
+        },
+        "storageAutogrow": {
+            "value": "Disabled"
+        },
+        "iopsTier": {
+            "value": "P4"
+        }
+    }
+}
