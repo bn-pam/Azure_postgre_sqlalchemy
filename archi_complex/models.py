@@ -1,9 +1,16 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import declarative_base 
 from orm import Base
+from dotenv import load_dotenv
+import os
+
+load_dotenv() # charge dotenv pour les références au fichier .ENV
 
 Base = declarative_base()
-DATABASE_URL = 'postgresql://pbosql:rgFa%$"j99"qHx"@pb-postgresql.postgres.database.azure.com:5432/db1books?client_encoding=en_US.utf8'
+# Définir la connexion à la base de données
+
+# url de la BDD
+DATABASE_URL = os.getenv("DATABASE_URL") 
 
 class Book(Base):
     __tablename__ = 'books'

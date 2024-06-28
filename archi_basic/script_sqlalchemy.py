@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 
-# D�finir la connexion � la base de donn�es
+# Définir la connexion à la base de données
 
 # url de la BDD
 DATABASE_URL = os.getenv("DATABASE_URL") 
